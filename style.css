@@ -144,7 +144,6 @@ footer h5{
 }
 #eu{
     grid-area: 3 / 5 / span 1/ span 1;
-    text-decoration: none;
     color: rgba(29, 154, 163, 0.966);
 }
 #Social{
