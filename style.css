@@ -5,7 +5,6 @@ body{
     margin: auto;
 }
 h1, h2, h3{
-
     font-family: "Dancing Script", cursive;
     margin: 0px;
     text-align: center;
@@ -25,6 +24,7 @@ h3{
     font-weight: 700px;
 }
 h5{
+    
     font-size: 1em;
     color: white;
 }
@@ -46,14 +46,14 @@ main{
     margin: 1%;
 }
 
-ul,li{
+main ul,li{
     font-size: 1.2em;
     font-family: "Cookie", cursive;
     font-weight: 400;
     font-style: italic;
 }
 
-p{
+main p{
     color: #3E2723 ;
     font-size: 1.8em;
     font-family: "Cookie", cursive;
@@ -64,18 +64,15 @@ p{
     color: #2e1d1a ;
 }
 
-
-
 #conteudo-principal{
     background-color: rgba(0, 0, 0, 0.007);
 }
 
 .bebida{
-    padding: 2%;
-    border-radius: 3px;
+    padding: 13px;
+    border-radius: 5px;
     background-color: #4d42340c;
     margin: 1em;
-    width: auto;
 }
 
 .bebida > hr{
@@ -87,29 +84,78 @@ hr{
 }
 .ava{
     width: auto;
-    display: inline-flex;
-    gap: 2%;
+    display: flex;
+    flex-flow: row wrap;
     align-items: center;
+    justify-content: center;
+    align-content: space-around;
 }
-
-img{
+.ava p{
+    text-align: justify;
+    flex: 1 1 755px;
+}
+.ava img{
+    
+    flex: 0 0 350px;
+    display: block;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.199);
 }
 
 footer{
-    padding: 4px;
+    color: white;
+    display: grid;
+    align-items: center;
+    grid-template: repeat(4, auto)/ 1fr, 2fr, 1fr, 2fr;
     font-family: 'Times New Roman', Times, serif;
     width: 100%;
     margin: auto;
-    border-radius: 4px;
     background-color: #000000cb;
+    gap: 5px;
+}
+footer h5{
+    grid-area: 1 / 1 / span 1 / span 6;
+    padding-bottom: 10px ;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+#foCon{
+    grid-area: 2 / 1 / span 1/ span 1;
+   
+}
+#foEma{
+    grid-area: 3 / 1 / span 1/ span 1;
+    text-indent: 5px;
+}
+#Ema{
+    grid-area: 3 / 2 / span 1/ span 1;
+    color: rgba(29, 154, 163, 0.966);
+    justify-self: start;
+}
+#foNum{
+    grid-area: 4 / 1 / span 1 / span 1;
+     text-indent: 5px;
+}
+#Num{
+    grid-area: 4 / 2 / span 1 / span 1;
+    color: rgba(29, 154, 163, 0.966);
+    justify-self: start;
+}
+#foSoc{
+    grid-area: 2 / 4 / span 1 /span 1;
+}
+#eu{
+    grid-area: 3 / 5 / span 1/ span 1;
+    text-decoration: none;
+    color: rgba(29, 154, 163, 0.966);
+}
+#Social{
+    grid-area: 4 / 4 / span 1 / span 2;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
 }
 
-a > img{
-    margin: auto  auto auto 50px;
-    width: 20px;
+footer img{
+    width: 25px;
     height: 20px;
 }
-
 
